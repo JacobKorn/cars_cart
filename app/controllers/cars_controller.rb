@@ -2,7 +2,10 @@ class CarsController < ApplicationController
 
 	def index
 		@cars = Car.all
-		# bind(pry)
+		respond_to do |format|
+			format.html 
+			format.json { render json: @cars}
+		end
 	end
 
 	def new
