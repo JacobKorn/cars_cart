@@ -8,7 +8,7 @@ CarController.prototype = {
 	start: function() {
 
 	},
-	showCars: function(){
-		this.car.getCars()
+	showCar: function(){
+		this.car.getCar()
 	}
 }

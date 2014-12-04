@@ -3,11 +3,10 @@ var CarModel = function() {
 }
 
 CarModel.prototype = {
-	getCars: function() {
+	getCar: function() {
 		$.ajax({
 			type: "GET",
-			url: "/cars",
-			dataType: "json",
+			url: "/cars.json",
 			success: function(data) {
 				console.log(data)
 			}
