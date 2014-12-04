@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="large-12 columns">
+		<h1>Listing Cars</h1>
+		<ul class="large-block-grid-3 medium-block-grid-2 small-block-grid-1">
+			<% @cars.each do |car| %>
+				<li><h3><%= car.name %></h3>
+					<p><%= car.shape.name %></p>
+					<p><%= car.colour.name %></p>
+					<p><%= car.wheel_style.name %></p>
+				</li>
+
+
+			<% end %>
+		</ul>
+		<%= link_to "New Car", new_car_path %>
+	</div>
+</div>

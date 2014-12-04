@@ -1,0 +1,28 @@
+<%= form_for(@car) do |f| %>
+	
+	<div class="field">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :shape_id %>
+		<%= f.select(:shape_id, options_for_select(@select_options.shape)) %>
+	</div>
+
+	<div class="field">
+		<%= f.label :colour_id %>
+		<%= f.select(:colour_id, options_for_select(@select_options.colour)) %>
+	</div>
+
+	<div class="field">
+		<%= f.label :wheel_style_id %>
+		<%= f.select(:wheel_style_id, options_for_select(@select_options.wheel_style)) %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit("Create New Car", class: "button expand") %>
+	</div>
+
+
+<% end %>
