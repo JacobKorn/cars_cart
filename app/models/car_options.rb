@@ -5,7 +5,7 @@ class CarOptions
 	end
 
 	def colour
-		@colour ||= Colour.all.pluck(:name, :id)
+		@colour ||= Colour.pluck(:name, :id)
 	end
 
 	def wheel_style
