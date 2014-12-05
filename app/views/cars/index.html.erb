@@ -4,6 +4,7 @@
 		<ul class="large-block-grid-3 medium-block-grid-2 small-block-grid-1">
 			<% @cars.each do |car| %>
 				<li><h3><%= car.name %></h3>
+					<p>user: <%= car.user.id %></p>
 					<p><%= car.shape.name %></p>
 					<p><%= car.colour.name %></p>
 					<p><%= car.wheel_style.name %></p>
